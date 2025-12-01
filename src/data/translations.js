@@ -47,6 +47,23 @@ export const translations = {
     contact: 'contact',
     contactText: 'I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me',
     contactMessage: 'Message me here',
+    contactFormName: 'Name',
+    contactFormEmail: 'Email',
+    contactFormMessage: 'Message',
+    contactFormSubmit: 'Send',
+    contactFormSending: 'Sending...',
+    contactFormSuccess: 'Thanks! I will get back to you soon.',
+    contactFormError: 'Something went wrong. Please try again later.',
+    contactFormConfig: 'Email service is not configured yet.',
+    contactFormOpen: 'Sendmessage',
+    contactFormClose: 'Hide form',
+    contactFormTitle: 'Title',
+  
+    // footer
+    footerRole: 'Web designer and front-end developer',
+    footerMedia: 'Media',
+    footerCopyPrefix: '© Copyright 2022 - ',
+    footerCopySuffix: '. Made by Deitywater',
   },
   ru: {
     // Header
@@ -89,13 +106,30 @@ export const translations = {
     // about me section
     aboutMe: 'обо-мне',
     aboutMeText: 'Привет, я Deitywater!',
-    aboutMeText2: 'Я опытный интерфейсный разработчик, увлеченный созданием визуально привлекательных и функционально мощных веб-приложений. Моя цель — превратить каждый проект в уникальное цифровое искусство, оптимизированное для пользователей и бизнеса.',
+    aboutMeText2: 'Я опытный фронтенд-разработчик, увлеченный созданием визуально привлекательных и функционально мощных веб-приложений. Моя цель — превратить каждый проект в уникальное цифровое искусство, оптимизированное для пользователей и бизнеса.',
     aboutMeText3: 'Я постоянно стремлюсь к профессиональному росту, изучаю новые технологии и frameworks, чтобы создавать еще более качественные и современные цифровые продукты. Я открыт к новым вызовам и возможностям для сотрудничества.',
 
     // contact section
     contact: 'контакты',
     contactText: 'Я заинтересован в freelance возможностях. Однако, если у вас есть другие запросы или вопросы, не стесняйтесь связаться со мной',
     contactMessage: 'Напишите мне здесь',
+    contactFormName: 'Имя',
+    contactFormEmail: 'Почта',
+    contactFormMessage: 'Сообщение',
+    contactFormSubmit: 'Отправить сообщение',
+    contactFormSending: 'Отправка...',
+    contactFormSuccess: 'Спасибо! Я свяжусь с вами в ближайшее время.',
+    contactFormError: 'Что-то пошло не так. Попробуйте позже.',
+    contactFormConfig: 'Сервис отправки пока не настроен.',
+    contactFormOpen: 'Отправить сообщение',
+    contactFormClose: 'Скрыть форму',
+    contactFormTitle: 'Тема',
+
+    // footer
+    footerRole: 'Веб-дизайнер и фронтенд-разработчик',
+    footerMedia: 'Медиа',
+    footerCopyPrefix: '© Авторские права 2022 - ',
+    footerCopySuffix: '. Сделано Deitywater',
   },
   tr: {
     // Header
@@ -145,6 +179,23 @@ export const translations = {
     contact: 'iletişim',
     contactText: 'Freelance fırsatlarına ilgi duyuyorum. Ancak, başka istekleriniz veya sorularınız varsa, lütfen bana ulaşın.',
     contactMessage: 'Bana buradan mesaj gönderin',
+    contactFormName: 'Adınız',
+    contactFormEmail: 'E-posta adresiniz',
+    contactFormMessage: 'Mesajınız',
+    contactFormSubmit: 'Mesaj gönder',
+    contactFormSending: 'Gönderiliyor...',
+    contactFormSuccess: 'Teşekkürler! En kısa sürede size döneceğim.',
+    contactFormError: 'Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.',
+    contactFormConfig: 'E-posta servisi henüz yapılandırılmadı.',
+    contactFormOpen: 'Mesaj gönder',
+    contactFormClose: 'Formu gizle',
+    contactFormTitle: 'Konu',
+
+    // footer
+    footerRole: 'Web tasarımcısı ve frontend geliştirici',
+    footerMedia: 'Medya',
+    footerCopyPrefix: '© Telif Hakkı 2022 - ',
+    footerCopySuffix: '. Deitywater tarafından yapıldı',
   },
   ja: {
     // Header
@@ -194,5 +245,22 @@ export const translations = {
     contact: '連絡先',
     contactText: 'フリーランスの機会に興味があります。ただし、他の要望や質問があれば、お気軽にお問い合わせください。',
     contactMessage: 'ここからメッセージを送信してください',
+    contactFormName: 'お名前',
+    contactFormEmail: 'メールアドレス',
+    contactFormMessage: 'メッセージ',
+    contactFormSubmit: '送信',
+    contactFormSending: '送信中...',
+    contactFormSuccess: 'ありがとうございます。折り返しご連絡いたします。',
+    contactFormError: 'エラーが発生しました。後ほどもう一度お試しください。',
+    contactFormConfig: 'メールサービスがまだ設定されていません。',
+    contactFormOpen: 'メッセージを送信',
+    contactFormClose: 'フォームを隠す',
+    contactFormTitle: 'タイトル',
+
+    // footer
+    footerRole: 'ウェブデザイナー / フロントエンドエンジニア',
+    footerMedia: 'メディア',
+    footerCopyPrefix: '© 著作権 2022 - ',
+    footerCopySuffix: '。Deitywater 制作',
   },
 };

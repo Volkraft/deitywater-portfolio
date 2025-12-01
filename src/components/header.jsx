@@ -1,9 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import github from '../assets/github-logo.svg';
 import telegram from '../assets/telegram-icon.svg';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../data/translations';
+
+const navLinks = [
+  { key: 'home', path: '/' },
+  { key: 'works', path: '/projects' },
+  { key: 'about-me', path: '/about' },
+  { key: 'contacts', path: '/contact' },
+];
 
 export default function Header() {
   const { language, changeLanguage } = useLanguage();
@@ -16,7 +24,6 @@ export default function Header() {
     setIsMenuOpen(false);
   };
 
-  // Закрытие меню при клике вне его
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -38,51 +45,39 @@ export default function Header() {
       <div className="social-header">
         <span className="social-header__line"></span>
         <div className="social-header__links">
-          <a href="https://github.com/Volkraft" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Volkraft"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={github} alt="GitHub" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me" target="_blank" rel="noopener noreferrer">
             <img src={telegram} alt="Telegram" />
           </a>
         </div>
       </div>
       <div className="container">
         <div className="header__content">
-          <a href='#!' className="header__title">
+          <NavLink to="/" className="header__title">
             <img src={logo} className="header__logo" alt="logo" />
             <span className="header__title-text">Deitywater</span>
-          </a>
+          </NavLink>
           <nav className="menu" id="menu">
             <ul className="menu__list">
-              <li className="menu__item">
-                <a
-                  href="#!"
-                  className="anchor-link"
-                  style={{ color: 'white' }}
-                >
-                  {' '}
-                  <span className="hashtag">#</span>
-                  {t.home}
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#!" className="anchor-link">
-                  <span className="hashtag">#</span>
-                  {t.works}
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#!" className="anchor-link">
-                  <span className="hashtag">#</span>
-                  {t['about-me']}
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#!" className="anchor-link">
-                  <span className="hashtag">#</span>
-                  {t.contacts}
-                </a>
-              </li>
+              {navLinks.map((link) => (
+                <li className="menu__item" key={link.key}>
+                  <NavLink
+                    to={link.path}
+                    className={({ isActive }) =>
+                      `anchor-link ${isActive ? 'anchor-link--active' : ''}`
+                    }
+                  >
+                    <span className="hashtag">#</span>
+                    {t[link.key]}
+                  </NavLink>
+                </li>
+              ))}
               <li
                 className={`menu__item ${isMenuOpen ? 'active' : ''}`}
                 ref={menuRef}
@@ -99,38 +94,16 @@ export default function Header() {
                   }`}
                 >
                   <ul className="sublist sublist--first">
-                    <li className="sublist__item">
-                      <button
-                        className="anchor-link"
-                        onClick={() => handleLanguageChange('en')}
-                      >
-                        EN
-                      </button>
-                    </li>
-                    <li className="sublist__item">
-                      <button
-                        className="anchor-link"
-                        onClick={() => handleLanguageChange('ru')}
-                      >
-                        RU
-                      </button>
-                    </li>
-                    <li className="sublist__item">
-                      <button
-                        className="anchor-link"
-                        onClick={() => handleLanguageChange('tr')}
-                      >
-                        TR
-                      </button>
-                    </li>
-                    <li className="sublist__item">
-                      <button
-                        className="anchor-link"
-                        onClick={() => handleLanguageChange('ja')}
-                      >
-                        JA
-                      </button>
-                    </li>
+                    {['en', 'ru', 'tr', 'ja'].map((lang) => (
+                      <li className="sublist__item" key={lang}>
+                        <button
+                          className="anchor-link"
+                          onClick={() => handleLanguageChange(lang)}
+                        >
+                          {lang.toUpperCase()}
+                        </button>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </li>

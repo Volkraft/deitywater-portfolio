@@ -25,9 +25,15 @@
     display: inline;
     position: relative;
     border: $primary 1px solid;
-    padding: 8px 16px;
+    padding: 10px 16px;
     transition: 0.4s;
-    
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+
+    &--contact{
+      background-color: transparent;
+    }
     &:hover{
       color: $white;
     }
@@ -499,6 +505,38 @@
       color: $gray;
     }
   }
+  .contact__links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact__link{
+    font-size: 16px;
+    color: $gray;
+    position: relative;
+    padding-left: 37px;
+
+    &--email::before,
+    &--telegram::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--email::before{
+      background-image: url('../../assets/mail.svg');
+    }
+
+    &--telegram::before{
+      background-image: url('../../assets/telegram-icon.svg');
+    }
+  }
+
   &__message{
     display: flex;
     flex-direction: column;
@@ -511,42 +549,9 @@
       margin-bottom: 16px;
       font-weight: 700;
     }
-    .contact__info-links{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contact__link{
-      font-size: 16px;
-      color: $gray;
-      position: relative;
-      padding: 0 0 0 37px;
-      &--email{
-        &::before{
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 25px;
-          height: 25px;
-          background-image: url('../../assets/mail.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
-      &--telegram{
-        &::before{
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 25px;
-          height: 25px;
-          background-image: url('../../assets/telegram-icon.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
+
+    .contact__toggle{
+      margin-bottom: 12px;
     }
   }
 }
