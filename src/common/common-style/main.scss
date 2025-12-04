@@ -171,8 +171,41 @@
 .project{
   width: 100%;
   margin-bottom: 106px;
-  &__content{
+  &--page{
+    padding-top: 106px;
+    margin-bottom: 106px;
 
+    .project__list{
+      margin-bottom: 81px;
+    }
+    .main-title--small-projects-completed{
+      margin-bottom: 50px;
+    }
+
+
+
+    .project__info{
+      flex-direction: column;
+
+      .main-title{
+        margin-bottom: 16px;
+        &::before{
+          content: "";
+          display: none;
+        }
+      }
+      .project__subtitle{
+        font-size: 16px;
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
+  &__content{
+    .main-title--projects-completed{
+      margin-bottom: 50px;
+
+    }
   }
   &__info{
     display: flex;
@@ -193,6 +226,9 @@
         right: -16px;
         top: 50%;
 
+      }
+      &--projects{
+        font-size: 32px;
       }
     }
     .project__link{
@@ -224,10 +260,10 @@
   }
   &__list{
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 16px;
+    gap: 20px;
     flex-wrap: wrap;
+
   }
   &__item{
     max-width: 352px;

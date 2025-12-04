@@ -17,6 +17,6 @@ export const skillsData = [
     },
     {
         title: 'skills-5',
-        used: 'React FastAPI Django Aiogram Vite.js'
+        used: 'React FastAPI Django Aiogram Vite.js Canvas'
     }
 ];

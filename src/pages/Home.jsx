@@ -60,9 +60,6 @@ export default function Home() {
       </section>
 
       <section className="quote">
-        <div className="square">
-          <img src={square} alt="GitHub" />
-        </div>
         <figure className="quoteInfo">
           <blockquote className="quoteText">{t.quote}</blockquote>
           <figcaption className="quoteAuthor">{t.quoteAuthor}</figcaption>

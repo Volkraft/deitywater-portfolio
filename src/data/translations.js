@@ -21,14 +21,17 @@ export const translations = {
     
     // Projects section
     projects: 'projects',
+    projectsSubtitle: 'List of my projects',
     viewAll: 'View all',
-    
+    projectscompleted: 'complete-apps',
+    projectsmallcompleted: 'small-projects',
     // Projects subtitles
     'project-1-subtitle': 'It is an innovative educational platform that offers comprehensive learning in accordance with Islamic values. Our school combines modern educational methods with traditional Islamic knowledge, creating a unique environment for the harmonious development of personality.',
     'project-2-subtitle': 'Your personal task organizer. Create, manage and track your to-dos - your data is saved even after you close your browser.',
     'project-3-subtitle': 'Academy of Virtual Reality. Master the jobs of the future through immersive VR training. Your future is in our hands',
     'project-4-subtitle': 'Find the perfect images by title. Advanced search with AI filtering and premium quality collection.',
-
+    'project-5-subtitle': 'A simple word guessing game. Guess the word before you run out of guesses.',
+    'project-6-subtitle': 'Minimalist, stylish and convenient web player for online radio. The site offers a clean interface without extra elements, allowing you to focus on the main thing - listening to music and radio stations from all over the world',
     // skills section
     skills: 'skills',
     'skills-1': 'Languages',
@@ -36,11 +39,13 @@ export const translations = {
     'skills-3': 'Tools',
     'skills-4': 'Other',
     'skills-5': 'Frameworks',
+    'old-portfolio-subtitle': 'My first portfolio, made in 2022. For my first portfolio, I used HTML, SCSS, JavaScript and PHP.',
+    'minecraft-server-subtitle': 'My Minecraft server, made in 2024. For my Minecraft server, I used Java.',
     
     // about me section
     aboutMe: 'about-me',
     aboutMeText: "Hello, I'm Deitywater!",
-    aboutMeText2: 'I am an experienced frontend developer who is passionate about creating visually appealing and functionally powerful web applications. My goal is to turn each project into a unique digital art optimized for users and businesses.',
+    aboutMeText2: 'I am an beginner frontend developer who is passionate about creating visually appealing and functionally powerful web applications. My goal is to turn each project into a unique digital art optimized for users and businesses.',
     aboutMeText3: 'I constantly strive for professional growth, studying new technologies and frameworks in order to create even better and more modern digital products. I am open to new challenges and opportunities for cooperation.',
 
     // contact section
@@ -87,14 +92,17 @@ export const translations = {
     
     // Projects section
     projects: 'проекты',
+    projectsSubtitle: 'Все мои проекты',
     viewAll: 'Смотреть все',
-    
+    projectscompleted: 'выполненные проекты',
+    projectsmallcompleted: 'малые проекты',
     // Projects subtitles
     'project-1-subtitle': 'Это инновационная образовательная платформа, предлагающая комплексное обучение в соответствии с исламскими ценностями. Наша школа объединяет современные образовательные методики с традиционными исламскими знаниями, создавая уникальную среду для гармоничного развития личности.',
     'project-2-subtitle': 'Ваш личный организатор задач. Создавайте, управляйте и отслеживайте свои задачи - ваши данные сохраняются даже после закрытия браузера.',
     'project-3-subtitle': 'Академия виртуальной реальности. Освойте профессии будущего через иммерсивное VR-обучение. Ваше будущее в наших руках',
     'project-4-subtitle': 'Находите идеальные изображения по названию. Расширенный поиск с AI-фильтрацией и коллекцией премиум-качества.',
-
+    'project-5-subtitle': 'Простая игра в угадывание слов. Угадайте слово, прежде чем закончить попытки.',
+    'project-6-subtitle': 'Минималистичный, стильный и удобный веб-плеер для онлайн-радио. Сайт предлагает чистый интерфейс без лишних элементов, позволяя сосредоточиться на главном — прослушивании музыки и радиостанций со всего мира',
     // skills section
     skills: 'навыки',
     'skills-1': 'Языки программирования',
@@ -102,11 +110,12 @@ export const translations = {
     'skills-3': 'Инструменты',
     'skills-4': 'Другие',
     'skills-5': 'Фреймворки',
-
+    'old-portfolio-subtitle': 'Мой первый портфолио, сделанный в 2022 году. Для моего первого портфолио я использовал HTML, SCSS, JavaScript и PHP.',
+    'minecraft-server-subtitle': 'Мой сервер Minecraft, сделанный в 2022 году. Для моего сервера Minecraft я использовал Java.',
     // about me section
     aboutMe: 'обо-мне',
     aboutMeText: 'Привет, я Deitywater!',
-    aboutMeText2: 'Я опытный фронтенд-разработчик, увлеченный созданием визуально привлекательных и функционально мощных веб-приложений. Моя цель — превратить каждый проект в уникальное цифровое искусство, оптимизированное для пользователей и бизнеса.',
+    aboutMeText2: 'Я начинающий фронтенд-разработчик, увлеченный созданием визуально привлекательных и функционально мощных веб-приложений. Моя цель — превратить каждый проект в уникальное цифровое искусство, оптимизированное для пользователей и бизнеса.',
     aboutMeText3: 'Я постоянно стремлюсь к профессиональному росту, изучаю новые технологии и frameworks, чтобы создавать еще более качественные и современные цифровые продукты. Я открыт к новым вызовам и возможностям для сотрудничества.',
 
     // contact section
@@ -153,14 +162,17 @@ export const translations = {
 
     // Projects section
     projects: 'projeler',
+    projectsSubtitle: 'Tüm projelerim',
     viewAll: 'Hepsini göster',
-
+    projectscompleted: 'tamamlanan projeler',
+    projectsmallcompleted: 'küçük projeler',
     // Projects subtitles
     'project-1-subtitle': 'İslami değerlere uygun kapsamlı eğitim sunan yenilikçi bir eğitim platformu. Okulumuz, çağdaş eğitim yöntemlerini geleneksel İslami ilimlerle birleştirerek kişisel gelişim için benzersiz bir ortam oluşturur.',
     'project-2-subtitle': 'Kişisel görev yöneticiniz. Görevlerinizi oluşturun, yönetin ve takip edin — verileriniz tarayıcıyı kapattıktan sonra bile saklanır.',
     'project-3-subtitle': 'Sanal Gerçeklik Akademisi. Geleceğin mesleklerini etkileyici VR eğitimleriyle öğrenin. Geleceğiniz emin ellerde.',
     'project-4-subtitle': 'Başlığa göre mükemmel görseller bulun. Yapay zeka filtreleme ve yüksek kaliteli koleksiyon ile gelişmiş arama.',
-
+    'project-5-subtitle': 'Basit bir kelime tahmin oyunu. Kelimi tahmin etmek için tahmin hakkınız bitmeden önce kelimeyi bulun.',
+    'project-6-subtitle': 'Minimalist, stylish ve kullanımı kolay bir web radyo oynatıcı. Site, ekstra elemanlar olmadan temiz bir arayüz sunar, kullanıcıların odaklanmasına olanak tanıyarak en önemli şeyi - müzik ve dünya genelindeki radyo istasyonlarını dinlemeye odaklanmasını sağlar',
     // skills section
     skills: 'yetenekler',
     'skills-1': 'Diller',
@@ -168,7 +180,8 @@ export const translations = {
     'skills-3': 'Araçlar',
     'skills-4': 'Diğer',
     'skills-5': 'Çatılar',
-
+    'old-portfolio-subtitle': 'Eski portföyüm, 2022 yılında yapıldı. İlk portföyüm için HTML, SCSS, JavaScript ve PHP kullandım.',
+    'minecraft-server-subtitle': 'Minecraft sunucum, 2022 yılında yapıldı. Minecraft sunucum için Java kullandım.',
     // about me section
     aboutMe: 'hakkımda',
     aboutMeText: 'Merhaba, ben Deitywater!',
@@ -219,14 +232,17 @@ export const translations = {
 
     // Projects section
     projects: 'プロジェクト',
+    projectsSubtitle: 'すべてのプロジェクト',
     viewAll: 'すべて表示',
-
+    projectscompleted: '完成したプロジェクト',
+    projectsmallcompleted: '小さいプロジェクト',
     // Projects subtitles
     'project-1-subtitle': 'イスラムの価値観に基づいた包括的な学習を提供する革新的な教育プラットフォームです。現代的な教育手法と伝統的なイスラムの知識を組み合わせ、人格の調和のとれた成長のための特別な環境を作ります。',
     'project-2-subtitle': 'あなた専用のタスク管理ツール。タスクを作成・管理・追跡でき、ブラウザを閉じた後でもデータは保存されます。',
     'project-3-subtitle': 'バーチャルリアリティ・アカデミー。没入型VRトレーニングを通じて、未来の職業スキルを身につけましょう。あなたの未来をサポートします。',
     'project-4-subtitle': 'タイトルから理想的な画像を検索できます。AIフィルタリングと高品質コレクションによる高度な検索機能。',
-
+    'project-5-subtitle': '簡単な単語当てゲーム。予想が尽きる前に単語を当ててください。',
+    'project-6-subtitle': 'ミニマルでスタイリッシュで使いやすいウェブラジオプレーヤー。サイトは余分な要素なしでクリーンなインターフェースを提供し、ユーザーが最も重要なことに集中できるようにします - 音楽と世界中のラジオ局の聴くこと',
     // skills section
     skills: 'スキル',
     'skills-1': '言語',
@@ -234,7 +250,8 @@ export const translations = {
     'skills-3': 'ツール',
     'skills-4': 'その他',
     'skills-5': 'フレームワーク',
-
+    'old-portfolio-subtitle': '古いポートフォリオ、2022年に作成されました。初のポートフォリオにはHTML、SCSS、JavaScript、PHPを使用しました。',
+    'minecraft-server-subtitle': 'Minecraftサーバー、2022年に作成されました。MinecraftサーバーにはJavaを使用しました。',
     // about me section
     aboutMe: '自己紹介',
     aboutMeText: 'こんにちは、Deitywaterです！',

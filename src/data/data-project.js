@@ -54,5 +54,29 @@ export const items = [
             text2: 'Github =>',
         }
     },
+    {
+        img: Hangman,
+        used: 'HTML SCSS JavaScript MVC LocalStorage API Canvas',
+        title: 'Hangman Game',
+        subtitleKey: 'project-5-subtitle',
+        btn: {
+            link: 'https://volkraft.github.io/Hangman/',
+            text: 'Live =>',
+            link2: 'https://github.com/Volkraft/Hangman',
+            text2: 'Github =>',
+        }
+    },
+    {
+        img: RadioPlayer,
+        used: 'HTML SCSS JavaScript API PHP',
+        title: 'Radio Player',
+        subtitleKey: 'project-6-subtitle',
+        btn: {
+            link: 'https://volkraft.github.io/RadioPlayer/',
+            text: 'Live =>',
+            link2: 'https://github.com/Volkraft/RadioPlayer',
+            text2: 'Github =>',
+        }
+    },
 ]
 
