@@ -15,6 +15,7 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', title: '', message: '' });
   const [status, setStatus] = useState({ type: null, message: '' });
   const [isSending, setIsSending] = useState(false);
+  const [focused, setFocused] = useState({ name: false, email: false, title: false, message: false });
 
   const hideShadow = () => {
     const shadow = document.querySelector('.shadow-block-form');
@@ -24,6 +25,14 @@ export default function ContactForm() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleFocus = (field) => {
+    setFocused((prev) => ({ ...prev, [field]: true }));
+  };
+
+  const handleBlur = (field) => {
+    setFocused((prev) => ({ ...prev, [field]: false }));
   };
 
   const handleSubmit = async (event) => {
@@ -83,48 +92,56 @@ export default function ContactForm() {
        <section className="contact-form-wrapper">
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="contact-form__input-wrapper">
-            <label className="contact-form__label contact-form__label--name">
+            <label className={`contact-form__label contact-form__label--name ${(focused.name || form.name) ? 'contact-form__label--active' : ''}`}>
+              <span className="contact-form__label-text">{t.contactFormName}</span>
               <input
                 name="name"
                 type="text"
                 value={form.name}
-                placeholder={t.contactFormName}
                 onChange={handleChange}
+                onFocus={() => handleFocus('name')}
+                onBlur={() => handleBlur('name')}
                 required
                 className="contact-form__input"
               />
             </label>
       
-            <label className="contact-form__label contact-form__label--email">
+            <label className={`contact-form__label contact-form__label--email ${(focused.email || form.email) ? 'contact-form__label--active' : ''}`}>
+              <span className="contact-form__label-text">{t.contactFormEmail}</span>
               <input
                 name="email"
                 type="email"
                 value={form.email}
-                placeholder={t.contactFormEmail}
                 onChange={handleChange}
+                onFocus={() => handleFocus('email')}
+                onBlur={() => handleBlur('email')}
                 required
                 className="contact-form__input"
               />
             </label>
           </div>
     
-          <label className="contact-form__label contact-form__label--title">
+          <label className={`contact-form__label contact-form__label--title ${(focused.title || form.title) ? 'contact-form__label--active' : ''}`}>
+            <span className="contact-form__label-text">{t.contactFormTitle}</span>
             <input
               name="title"
               type="text"
               value={form.title}
-              placeholder={t.contactFormTitle}
               onChange={handleChange}
+              onFocus={() => handleFocus('title')}
+              onBlur={() => handleBlur('title')}
               required
               className="contact-form__input"
             />
           </label>
-          <label className="contact-form__label contact-form__label--message">
+          <label className={`contact-form__label contact-form__label--message ${(focused.message || form.message) ? 'contact-form__label--active' : ''}`}>
+            <span className="contact-form__label-text">{t.contactFormMessage}</span>
             <textarea
               name="message"
               value={form.message}
-              placeholder={t.contactFormMessage}
               onChange={handleChange}
+              onFocus={() => handleFocus('message')}
+              onBlur={() => handleBlur('message')}
               required
               className="contact-form__textarea"
               rows="4"

@@ -1,0 +1,37 @@
+@use './vars.scss' as *;
+
+.button{
+  display: inline;
+  position: relative;
+  border: $primary 1px solid;
+  padding: 10px 16px;
+  transition: 0.4s;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+
+  &--contact{
+    background-color: transparent;
+  }
+  &:hover{
+    color: $white;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    inset: -5px;
+    transform: translate(8px, 5px);
+    z-index: -1;
+    background: $primary;
+    filter: blur(20px);
+    transition: 0.4s;
+    opacity: 0;
+}
+  &:hover::before {
+      opacity: 0.3;
+  }
+
+}
+

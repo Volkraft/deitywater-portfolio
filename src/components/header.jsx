@@ -16,12 +16,21 @@ const navLinks = [
 export default function Header() {
   const { language, changeLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const menuRef = useRef(null);
   const t = translations[language];
 
   const handleLanguageChange = (lang) => {
     changeLanguage(lang);
     setIsMenuOpen(false);
+  };
+
+  const handleBurgerToggle = () => {
+    setIsBurgerOpen(!isBurgerOpen);
+  };
+
+  const handleNavClick = () => {
+    setIsBurgerOpen(false);
   };
 
   useEffect(() => {
@@ -59,11 +68,20 @@ export default function Header() {
       </div>
       <div className="container">
         <div className="header__content">
-          <NavLink to="/" className="header__title">
+          <NavLink to="/" className="header__title" onClick={handleNavClick}>
             <img src={logo} className="header__logo" alt="logo" />
             <span className="header__title-text">Deitywater</span>
           </NavLink>
-          <nav className="menu" id="menu">
+          <button 
+            className={`burger ${isBurgerOpen ? 'burger--open' : ''}`}
+            onClick={handleBurgerToggle}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav className={`menu ${isBurgerOpen ? 'menu--open' : ''}`} id="menu">
             <ul className="menu__list">
               {navLinks.map((link) => (
                 <li className="menu__item" key={link.key}>
@@ -72,6 +90,7 @@ export default function Header() {
                     className={({ isActive }) =>
                       `anchor-link ${isActive ? 'anchor-link--active' : ''}`
                     }
+                    onClick={handleNavClick}
                   >
                     <span className="hashtag">#</span>
                     {t[link.key]}
@@ -108,6 +127,24 @@ export default function Header() {
                 </div>
               </li>
             </ul>
+            <div className="menu__social">
+              <a
+                href="https://github.com/Volkraft"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+              >
+                <img src={github} alt="GitHub" />
+              </a>
+              <a 
+                href="https://t.me" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+              >
+                <img src={telegram} alt="Telegram" />
+              </a>
+            </div>
           </nav>
         </div>
       </div>

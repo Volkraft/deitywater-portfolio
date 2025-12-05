@@ -1,0 +1,122 @@
+@use './vars.scss' as *;
+
+.preview {
+  padding-top: 150px;
+  width: 100%;
+  margin-bottom: 112px;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__basic-info{
+    width: 537px;
+  }
+  .hero{
+    .main-title{
+      margin-bottom: 32px;
+    }
+    .main-text{
+      margin-bottom: 25px;
+    }
+  }
+}
+.preview__info{
+  position: relative;
+  top: -4px;
+  border: $gray 1px solid;
+  font-size: 16px;
+  font-weight: 600;
+  color: $gray;
+  padding: 8px 80px 8px 34px;
+  span{
+    color: $white;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 2%;
+    width: 16px;
+    height: 16px;
+    background-color: $primary;
+
+  }
+}
+.preview__avatar{
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 4%;
+    background-image: url('../../assets/dots.svg');
+    width: 84px;
+    height: 84px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 23%;
+    left: 4%;
+    background-image: url('../../assets/alt.logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 155px;
+    height: 155px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview {
+    padding-top: 100px;
+    margin-bottom: 60px;
+
+    &__content {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__basic-info {
+      width: 100%;
+    }
+
+    .hero {
+      .main-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .main-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__avatar {
+      width: 100%;
+      // display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__info {
+      font-size: 14px;
+      padding: 6px 60px 6px 28px;
+    }
+  }
+}
+

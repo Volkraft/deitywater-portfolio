@@ -4,7 +4,7 @@ export const items = [
         used: 'HTML SCSS JavaScript PHP',
         subtitleKey: 'old-portfolio-subtitle',
         btn: {
-            link: 'https://volkraft.github.io/portfolio/',
+            link: 'https://volkraft.github.io/Portfolio/',
             text: 'Live =>',
         }
     },

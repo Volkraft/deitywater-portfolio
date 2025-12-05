@@ -34,14 +34,6 @@ export default function ProjectsPage() {
             {t.projectsmallcompleted}
           </h1>
           <SmallProjectList/>
-
-          <h1 className="main-title main-title--facts">
-            <span className="hashtag">#</span>
-            {t.projectsfacts}
-          </h1>
-          <ul className="facts__list">
-            <Facts />
-          </ul>
         </div>
       </div>
     </section>

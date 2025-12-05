@@ -32,6 +32,7 @@ export const translations = {
     'project-4-subtitle': 'Find the perfect images by title. Advanced search with AI filtering and premium quality collection.',
     'project-5-subtitle': 'A simple word guessing game. Guess the word before you run out of guesses.',
     'project-6-subtitle': 'Minimalist, stylish and convenient web player for online radio. The site offers a clean interface without extra elements, allowing you to focus on the main thing - listening to music and radio stations from all over the world',
+    'project-7-subtitle': 'My personal portfolio website, made in 2025. For my portfolio website.',
     // skills section
     skills: 'skills',
     'skills-1': 'Languages',
@@ -53,7 +54,7 @@ export const translations = {
     aboutMeText: "Hello, I'm Deitywater!",
     aboutMeText2: 'I am an beginner frontend developer who is passionate about creating visually appealing and functionally powerful web applications. My goal is to turn each project into a unique digital art optimized for users and businesses.',
     aboutMeText3: 'I constantly strive for professional growth, studying new technologies and frameworks in order to create even better and more modern digital products. I am open to new challenges and opportunities for cooperation.',
-    aboutMesubtitle: 'Who am i?',
+    aboutMesubtitle : 'Who am i?',
 
     // contact section
     contact: 'contact',
@@ -117,6 +118,7 @@ export const translations = {
     'project-4-subtitle': 'Находите идеальные изображения по названию. Расширенный поиск с AI-фильтрацией и коллекцией премиум-качества.',
     'project-5-subtitle': 'Простая игра в угадывание слов. Угадайте слово, прежде чем закончить попытки.',
     'project-6-subtitle': 'Минималистичный, стильный и удобный веб-плеер для онлайн-радио. Сайт предлагает чистый интерфейс без лишних элементов, позволяя сосредоточиться на главном — прослушивании музыки и радиостанций со всего мира',
+    'project-7-subtitle': 'Мой персональный портфолио веб-сайт, сделанный в 2025 году. Для моего портфолио веб-сайта.',
     // skills section
     skills: 'навыки',
     'skills-1': 'Языки программирования',
@@ -154,8 +156,7 @@ export const translations = {
     contactFormOpen: 'Отправить сообщение',
     contactFormClose: 'Скрыть форму',
     contactFormTitle: 'Тема',
-    media: 'all-media',
-
+    media: 'медиа',
     // page titles
     pageTitleHome: 'Главная - Deitywater',
     pageTitleProjects: 'Проекты - Deitywater',
@@ -201,6 +202,7 @@ export const translations = {
     'project-4-subtitle': 'Başlığa göre mükemmel görseller bulun. Yapay zeka filtreleme ve yüksek kaliteli koleksiyon ile gelişmiş arama.',
     'project-5-subtitle': 'Basit bir kelime tahmin oyunu. Kelimi tahmin etmek için tahmin hakkınız bitmeden önce kelimeyi bulun.',
     'project-6-subtitle': 'Minimalist, stylish ve kullanımı kolay bir web radyo oynatıcı. Site, ekstra elemanlar olmadan temiz bir arayüz sunar, kullanıcıların odaklanmasına olanak tanıyarak en önemli şeyi - müzik ve dünya genelindeki radyo istasyonlarını dinlemeye odaklanmasını sağlar',
+    'project-7-subtitle': 'Benim kişisel portföy web sitesi, 2025 yılında yapıldı. Benim portföy web sitesi için.',
     // skills section
     skills: 'yetenekler',
     'skills-1': 'Diller',
@@ -220,8 +222,9 @@ export const translations = {
     aboutMe: 'hakkımda',
     aboutMeText: 'Merhaba, ben Deitywater!',
     aboutMeText2: 'Görsel olarak çekici ve işlevsel olarak güçlü web uygulamaları oluşturmaya tutkulu, deneyimli bir frontend geliştiricisiyim. Amacım, her projeyi kullanıcılar ve işletmeler için optimize edilmiş benzersiz bir dijital sanat eserine dönüştürmek.',
-    aboutMeText3: 'Sürekli mesleki gelişim peşindeyim; daha iyi ve daha modern dijital ürünler geliştirmek için yeni teknolojileri ve framework’leri öğreniyorum. Yeni zorluklara ve işbirliği fırsatlarına açığım.',
+    aboutMeText3: 'Sürekli mesleki gelişim peşindeyim; daha iyi ve daha modern dijital ürünler geliştirmek için yeni teknolojileri ve framework\'leri öğreniyorum. Yeni zorluklara ve işbirliği fırsatlarına açığım.',
     aboutMesubtitle: 'Ben kimim?',
+
     // contact section
     contact: 'iletişim',
     contactText: 'Freelance fırsatlarına ilgi duyuyorum. Ancak, başka istekleriniz veya sorularınız varsa, lütfen bana ulaşın.',
@@ -237,7 +240,7 @@ export const translations = {
     contactFormOpen: 'Mesaj gönder',
     contactFormClose: 'Formu gizle',
     contactFormTitle: 'Konu',
-    media: 'all-media',
+    media: 'medya',
 
     // page titles
     pageTitleHome: 'Portföy - Deitywater',
@@ -284,6 +287,7 @@ export const translations = {
     'project-4-subtitle': 'タイトルから理想的な画像を検索できます。AIフィルタリングと高品質コレクションによる高度な検索機能。',
     'project-5-subtitle': '簡単な単語当てゲーム。予想が尽きる前に単語を当ててください。',
     'project-6-subtitle': 'ミニマルでスタイリッシュで使いやすいウェブラジオプレーヤー。サイトは余分な要素なしでクリーンなインターフェースを提供し、ユーザーが最も重要なことに集中できるようにします - 音楽と世界中のラジオ局の聴くこと',
+    'project-7-subtitle': '私の個人ポートフォリオウェブサイト、2025年に作成されました。私のポートフォリオウェブサイトのために。',
     // skills section
     skills: 'スキル',
     'skills-1': '言語',
@@ -305,6 +309,7 @@ export const translations = {
     aboutMeText2: '見た目が美しく、機能的にも優れたウェブアプリケーションの制作を得意とするフロントエンドエンジニアです。ユーザーとビジネスの双方に最適化された、唯一無二のデジタルアートとして各プロジェクトを形にすることを目指しています。',
     aboutMeText3: '常に成長を目指し、新しい技術やフレームワークを学び続けることで、より高品質でモダンなデジタルプロダクトを生み出しています。新しい挑戦やコラボレーションの機会を歓迎しています。',
     aboutMesubtitle: '私は誰ですか？',
+
     // contact section
     contact: '連絡先',
     contactText: 'フリーランスの機会に興味があります。ただし、他の要望や質問があれば、お気軽にお問い合わせください。',
@@ -320,8 +325,7 @@ export const translations = {
     contactFormOpen: 'メッセージを送信',
     contactFormClose: 'フォームを隠す',
     contactFormTitle: 'タイトル',
-    media: 'all-media',
-
+    media: 'メディア',
     // page titles
     pageTitleHome: 'ポートフォリオ - Deitywater',
     pageTitleProjects: 'プロジェクト - Deitywater',

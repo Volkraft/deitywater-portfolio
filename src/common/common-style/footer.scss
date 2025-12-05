@@ -109,4 +109,48 @@
       color: $gray;
     }
   }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 24px;
+
+    &__card {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    &__main {
+      width: 100%;
+    }
+
+    &__media {
+      width: 100%;
+    }
+
+    &__title-row {
+      font-size: 14px;
+    }
+
+    &__name {
+      font-size: 14px;
+    }
+
+    &__email {
+      font-size: 12px;
+    }
+
+    &__role {
+      font-size: 12px;
+    }
+
+    &__media-title {
+      font-size: 20px;
+    }
+
+    &__copyright {
+      font-size: 12px;
+    }
+  }
+}
   

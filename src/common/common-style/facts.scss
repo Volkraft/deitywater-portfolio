@@ -1,0 +1,20 @@
+@use './vars.scss' as *;
+
+.facts__item{
+  border: 1px solid $gray;
+  .facts__used{
+    padding: 8px;
+    font-size: 16px;
+    color: $gray;
+  }
+}
+
+@media (max-width: 768px) {
+  .facts__item {
+    .facts__used {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+}
+

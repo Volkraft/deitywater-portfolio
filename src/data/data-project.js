@@ -4,7 +4,7 @@ import VRNAS from '../assets/img/VRNAS.png';
 import RadioPlayer from '../assets/img/RadioPlayer.png';
 import Gallery from '../assets/img/Gallery.png';
 import Hangman from '../assets/img/Hangman.png';
-
+import Portfolio from '../assets/img/Portfolio.png';
 export const items = [
     {
         img: onlineSchoolImg,
@@ -75,6 +75,18 @@ export const items = [
             link: 'https://volkraft.github.io/RadioPlayer/',
             text: 'Live =>',
             link2: 'https://github.com/Volkraft/RadioPlayer',
+            text2: 'Github =>',
+        }
+    },
+        {
+        img: Portfolio,
+        used: 'HTML SCSS JavaScript React Vite.js React Router i18next Context API',
+        title: 'Portfolio',
+        subtitleKey: 'project-7-subtitle',
+        btn: {
+            link: 'https://volkraft.github.io/deitywater-portfolio/',
+            text: 'Live =>',
+            link2: 'https://github.com/Volkraft/deitywater-portfolio',
             text2: 'Github =>',
         }
     },

@@ -49,3 +49,17 @@ h6 {
   color: $gray;
   font-size: 16px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .main-text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,98 @@
+@use './vars.scss' as *;
+
+.quote{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 140px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url('../../assets/square.svg');
+    width: 91px;
+    height: 91px;
+  }
+}
+.quoteInfo{
+  border: 1px solid $gray;
+  position: relative;
+  margin: 0;
+
+  &::before, &::after{
+    content: '"';
+    position: absolute;
+    color: $gray;
+    background-color: $background;
+  }
+  &::before{
+    font-size: 76px;
+    height: 25px;
+    top: -21px;
+    left: 15px;
+  }
+  &::after{
+    bottom: -2px;
+    right: 6px;
+    font-size: 55px;
+    height: 25px;
+  }
+}
+.quoteText{
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: $background;
+}
+.quoteAuthor{
+  position: absolute;
+  color: $gray;
+  border: 1px solid $gray;
+  padding: 8px;
+  right: -1px;
+  font-size: 24px;
+  padding: 16px;
+  z-index: 2;
+  background-color: $background;
+}
+.square{
+  width: 91px;
+  height: 91px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    margin-bottom: 80px;
+    padding: 0 20px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .quoteInfo {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .quoteText {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .quoteAuthor {
+    // position: static;
+    bottom: -56px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+

@@ -191,7 +191,6 @@ export default function Home() {
             </div>
             <div className="contact__message">
               <p className="contact__message-text">{t.contactMessage}</p>
-              {/* <ContactForm /> */}
               <div className="contact__links">
                 <p className="contact__link contact__link--email">
                   deitywaterDev@gmail.com
