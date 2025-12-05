@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import avatar from '../assets/avatar.svg';
 import square from '../assets/square.svg';
@@ -15,6 +15,10 @@ import ContactForm from '../components/ContactForm.jsx';
 export default function Home() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  useEffect(() => {
+    document.title = t.pageTitleHome;
+  }, [language, t]);
 
   return (
     <>
@@ -148,13 +152,18 @@ export default function Home() {
                 <p className="about-me__text about-me__text--3">
                   {t.aboutMeText3}
                 </p>
-                <a
-                  href="./src/price/price.html"
-                  className="button"
-                  data-anim="previewBtn"
+                <button
+                  id="contact-me-btn"
+                  className="button button--contact"
+                  onClick={() => {
+                    const form = document.getElementById('shadow-block-form');
+                    if (form) {
+                      form.classList.remove('hidden');
+                    }
+                  }}
                 >
                   <span>{t.contactMe}</span>
-                </a>
+                </button>
               </div>
               <div className="about-me__image">
                 <img

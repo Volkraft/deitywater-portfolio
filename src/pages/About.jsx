@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import aboutLogo from '../assets/about-me.svg';
 import dots from '../assets/dots.svg';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../data/translations';
+import Skills from '../components/skills.jsx';
+import Facts from '../components/Facts.jsx';
+
 
 export default function AboutPage() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  useEffect(() => {
+    document.title = t.pageTitleAbout;
+  }, [language, t]);
 
   return (
     <section className="about-me about-me--page">
@@ -14,9 +21,10 @@ export default function AboutPage() {
         <div className="about-me__content">
           <div className="about-me__info">
             <h1 className="main-title">
-              <span className="hashtag">#</span>
+              <span className="hashtag">/</span>
               {t.aboutMe}
             </h1>
+            <h6 className="project__subtitle">{t.aboutMesubtitle}</h6>
           </div>
           <div className="about-me__main-content">
             <div className="about-me__text">
@@ -36,14 +44,23 @@ export default function AboutPage() {
                 alt="man-with-headset"
                 className="logo__man"
               />
-              <img
-                src={dots}
-                alt="decor dots"
-                className="about-me__decor about-me__decor--dots"
-              />
             </div>
           </div>
         </div>
+        <h1 className="main-title main-title--projects">
+          <span className="hashtag">#</span>
+          {t.skills}
+        </h1>
+        <ul className="skills__list skills__list--about">
+          <Skills />
+        </ul>
+        <h1 className="main-title main-title--facts">
+          <span className="hashtag">#</span>
+          {t.projectsfacts}
+        </h1>
+        <ul className="skills__list skills__list--facts">
+          <Facts />
+        </ul>
       </div>
     </section>
   );

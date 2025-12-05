@@ -41,12 +41,19 @@ export const translations = {
     'skills-5': 'Frameworks',
     'old-portfolio-subtitle': 'My first portfolio, made in 2022. For my first portfolio, I used HTML, SCSS, JavaScript and PHP.',
     'minecraft-server-subtitle': 'My Minecraft server, made in 2024. For my Minecraft server, I used Java.',
+    'projectsfacts' : 'my-fun-facts',
+    'fact-1': 'I like pizza and pasta',
+    'fact-2': 'I play CS2 on professional level',
+    'fact-3': 'I spend a lot of time with editor',
+    'fact-4': 'I like music very much',
+    'fact-5': 'I like basketball',
     
     // about me section
     aboutMe: 'about-me',
     aboutMeText: "Hello, I'm Deitywater!",
     aboutMeText2: 'I am an beginner frontend developer who is passionate about creating visually appealing and functionally powerful web applications. My goal is to turn each project into a unique digital art optimized for users and businesses.',
     aboutMeText3: 'I constantly strive for professional growth, studying new technologies and frameworks in order to create even better and more modern digital products. I am open to new challenges and opportunities for cooperation.',
+    aboutMesubtitle: 'Who am i?',
 
     // contact section
     contact: 'contact',
@@ -63,6 +70,13 @@ export const translations = {
     contactFormOpen: 'Sendmessage',
     contactFormClose: 'Hide form',
     contactFormTitle: 'Title',
+    media: 'all-media',
+  
+    // page titles
+    pageTitleHome: 'Home | Portfolio',
+    pageTitleProjects: 'Projects | Deitywater',
+    pageTitleAbout: 'About Me | Deitywater',
+    pageTitleContact: 'Contact | Deitywater',
   
     // footer
     footerRole: 'Web designer and front-end developer',
@@ -112,11 +126,18 @@ export const translations = {
     'skills-5': 'Фреймворки',
     'old-portfolio-subtitle': 'Мой первый портфолио, сделанный в 2022 году. Для моего первого портфолио я использовал HTML, SCSS, JavaScript и PHP.',
     'minecraft-server-subtitle': 'Мой сервер Minecraft, сделанный в 2022 году. Для моего сервера Minecraft я использовал Java.',
+    'projectsfacts': 'мои-интересные-факты',
+    'fact-1': 'Я люблю пиццу и пасту',
+    'fact-2': 'Я играю в CS2 на профессиональном уровне',
+    'fact-3': 'Я провожу много времени с редактором',
+    'fact-4': 'Я очень люблю музыку',
+    'fact-5': 'Я люблю баскетбол',
     // about me section
     aboutMe: 'обо-мне',
     aboutMeText: 'Привет, я Deitywater!',
     aboutMeText2: 'Я начинающий фронтенд-разработчик, увлеченный созданием визуально привлекательных и функционально мощных веб-приложений. Моя цель — превратить каждый проект в уникальное цифровое искусство, оптимизированное для пользователей и бизнеса.',
     aboutMeText3: 'Я постоянно стремлюсь к профессиональному росту, изучаю новые технологии и frameworks, чтобы создавать еще более качественные и современные цифровые продукты. Я открыт к новым вызовам и возможностям для сотрудничества.',
+    aboutMesubtitle: 'Кто я?',
 
     // contact section
     contact: 'контакты',
@@ -133,6 +154,13 @@ export const translations = {
     contactFormOpen: 'Отправить сообщение',
     contactFormClose: 'Скрыть форму',
     contactFormTitle: 'Тема',
+    media: 'all-media',
+
+    // page titles
+    pageTitleHome: 'Главная - Deitywater',
+    pageTitleProjects: 'Проекты - Deitywater',
+    pageTitleAbout: 'Обо мне - Deitywater',
+    pageTitleContact: 'Контакты - Deitywater',
 
     // footer
     footerRole: 'Веб-дизайнер и фронтенд-разработчик',
@@ -182,12 +210,18 @@ export const translations = {
     'skills-5': 'Çatılar',
     'old-portfolio-subtitle': 'Eski portföyüm, 2022 yılında yapıldı. İlk portföyüm için HTML, SCSS, JavaScript ve PHP kullandım.',
     'minecraft-server-subtitle': 'Minecraft sunucum, 2022 yılında yapıldı. Minecraft sunucum için Java kullandım.',
+    'projectsfacts': 'eğlenceli-gerçeklerim',
+    'fact-1': 'Pizza ve makarnayı severim',
+    'fact-2': 'CS2\'de profesyonel seviyede oynuyorum',
+    'fact-3': 'Editörle çok zaman geçiriyorum',
+    'fact-4': 'Müziği çok severim',
+    'fact-5': 'Basketbolu severim',
     // about me section
     aboutMe: 'hakkımda',
     aboutMeText: 'Merhaba, ben Deitywater!',
     aboutMeText2: 'Görsel olarak çekici ve işlevsel olarak güçlü web uygulamaları oluşturmaya tutkulu, deneyimli bir frontend geliştiricisiyim. Amacım, her projeyi kullanıcılar ve işletmeler için optimize edilmiş benzersiz bir dijital sanat eserine dönüştürmek.',
     aboutMeText3: 'Sürekli mesleki gelişim peşindeyim; daha iyi ve daha modern dijital ürünler geliştirmek için yeni teknolojileri ve framework’leri öğreniyorum. Yeni zorluklara ve işbirliği fırsatlarına açığım.',
-
+    aboutMesubtitle: 'Ben kimim?',
     // contact section
     contact: 'iletişim',
     contactText: 'Freelance fırsatlarına ilgi duyuyorum. Ancak, başka istekleriniz veya sorularınız varsa, lütfen bana ulaşın.',
@@ -203,6 +237,13 @@ export const translations = {
     contactFormOpen: 'Mesaj gönder',
     contactFormClose: 'Formu gizle',
     contactFormTitle: 'Konu',
+    media: 'all-media',
+
+    // page titles
+    pageTitleHome: 'Portföy - Deitywater',
+    pageTitleProjects: 'Projeler - Deitywater',
+    pageTitleAbout: 'Hakkımda - Deitywater',
+    pageTitleContact: 'İletişim - Deitywater',
 
     // footer
     footerRole: 'Web tasarımcısı ve frontend geliştirici',
@@ -252,12 +293,18 @@ export const translations = {
     'skills-5': 'フレームワーク',
     'old-portfolio-subtitle': '古いポートフォリオ、2022年に作成されました。初のポートフォリオにはHTML、SCSS、JavaScript、PHPを使用しました。',
     'minecraft-server-subtitle': 'Minecraftサーバー、2022年に作成されました。MinecraftサーバーにはJavaを使用しました。',
+    'projectsfacts': '私の楽しい事実',
+    'fact-1': 'ピザとパスタが好きです',
+    'fact-2': 'CS2をプロレベルでプレイしています',
+    'fact-3': 'エディタで多くの時間を過ごしています',
+    'fact-4': '音楽がとても好きです',
+    'fact-5': 'バスケットボールが好きです',
     // about me section
     aboutMe: '自己紹介',
     aboutMeText: 'こんにちは、Deitywaterです！',
     aboutMeText2: '見た目が美しく、機能的にも優れたウェブアプリケーションの制作を得意とするフロントエンドエンジニアです。ユーザーとビジネスの双方に最適化された、唯一無二のデジタルアートとして各プロジェクトを形にすることを目指しています。',
     aboutMeText3: '常に成長を目指し、新しい技術やフレームワークを学び続けることで、より高品質でモダンなデジタルプロダクトを生み出しています。新しい挑戦やコラボレーションの機会を歓迎しています。',
-
+    aboutMesubtitle: '私は誰ですか？',
     // contact section
     contact: '連絡先',
     contactText: 'フリーランスの機会に興味があります。ただし、他の要望や質問があれば、お気軽にお問い合わせください。',
@@ -273,6 +320,13 @@ export const translations = {
     contactFormOpen: 'メッセージを送信',
     contactFormClose: 'フォームを隠す',
     contactFormTitle: 'タイトル',
+    media: 'all-media',
+
+    // page titles
+    pageTitleHome: 'ポートフォリオ - Deitywater',
+    pageTitleProjects: 'プロジェクト - Deitywater',
+    pageTitleAbout: '自己紹介 - Deitywater',
+    pageTitleContact: '連絡先 - Deitywater',
 
     // footer
     footerRole: 'ウェブデザイナー / フロントエンドエンジニア',

@@ -21,40 +21,6 @@
       margin-bottom: 25px;
     }
   }
-  .button{
-    display: inline;
-    position: relative;
-    border: $primary 1px solid;
-    padding: 10px 16px;
-    transition: 0.4s;
-    color: $white;
-    font-size: 16px;
-    font-weight: 600;
-
-    &--contact{
-      background-color: transparent;
-    }
-    &:hover{
-      color: $white;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      inset: -5px;
-      transform: translate(8px, 5px);
-      z-index: -1;
-      background: $primary;
-      filter: blur(20px);
-      transition: 0.4s;
-      opacity: 0;
-  }
-    &:hover::before {
-        opacity: 0.3;
-    }
-
-  }
 }
 .preview__info{
   position: relative;
@@ -188,16 +154,11 @@
       flex-direction: column;
 
       .main-title{
-        margin-bottom: 16px;
+        margin-bottom: 0px;
         &::before{
           content: "";
           display: none;
         }
-      }
-      .project__subtitle{
-        font-size: 16px;
-        color: $white;
-        font-weight: 500;
       }
     }
   }
@@ -229,6 +190,7 @@
       }
       &--projects{
         font-size: 32px;
+        margin-bottom: 48px;
       }
     }
     .project__link{
@@ -373,6 +335,17 @@
     align-items: flex-start;
     gap: 16px;
     flex-wrap: wrap;
+
+    &--about{
+      margin-top: 50px;
+      margin-bottom: 83px;
+      max-width: 100%;
+      justify-content: center;
+  }
+    &--facts{
+      margin-top: 26px;
+      justify-content: flex-start;
+    }
   }
   &__item{
     max-width: 178px;
@@ -436,6 +409,10 @@
 }
 .about-me{
   margin-bottom: 112px;
+
+  &--page{
+    padding-top: 106px;
+  }
   &__content{
   }
   &__info{
@@ -508,6 +485,11 @@
   }
 }
 .contact{
+
+  &--page{
+    padding-top: 110px;
+
+  }
   &__content{
     margin-bottom: 45px;
 
@@ -531,6 +513,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .contact__info--page{
+      margin-bottom: 88px;
+    }
 
   }
   &__info{
@@ -590,4 +576,52 @@
       margin-bottom: 12px;
     }
   }
+}
+.facts__item{
+  border: 1px solid $gray;
+  .facts__used{
+    padding: 8px;
+    font-size: 16px;
+    color: $gray;
+  }
+}
+.project__subtitle{
+  font-size: 16px;
+  color: $white;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.button{
+  display: inline;
+  position: relative;
+  border: $primary 1px solid;
+  padding: 10px 16px;
+  transition: 0.4s;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+
+  &--contact{
+    background-color: transparent;
+  }
+  &:hover{
+    color: $white;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    inset: -5px;
+    transform: translate(8px, 5px);
+    z-index: -1;
+    background: $primary;
+    filter: blur(20px);
+    transition: 0.4s;
+    opacity: 0;
+}
+  &:hover::before {
+      opacity: 0.3;
+  }
+
 }
